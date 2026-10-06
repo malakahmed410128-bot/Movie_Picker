@@ -1,0 +1,15 @@
+body{
+    background-color:linen;
+    font-family: arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+.navbar{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10ox rgba(0, 0, 0, 0.08);
+}
