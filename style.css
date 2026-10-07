@@ -66,3 +66,19 @@ h1{
     background-color: #1d4ed8;
     transform: translateY(-2px);
 }
+.secondary-btn{
+    background-color: #10b981;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+.secondary-btn:hover{
+    background-color: #059669;
+    transform: translateY(-2px);
+}
