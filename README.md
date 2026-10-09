@@ -1,4 +1,3 @@
-# Movie Finder
 hi! this is a movie recommendation site I made for Hack Club Waffles.
 
 I'm still new to coding and learning HTML, CSS and JavaScript, so I wanted to build something simple to help people pick a movie to watch when they are bored.
@@ -9,10 +8,12 @@ what the site does:
 
 tools used: HTML, CSS, Vanilla JS.
 
+screenshots:
+
+<img src="screen1.png" alt="Screen 1" width="100%">
+
+<img src="screen2.png" alt="Screen 2" width="100%">
+
+<img src="screen3.png" alt="Screen 3" width="100%">
+
 hope you like it!
-
-
-
-<img src="screen1.png" alt="Screen 1" width="300">
-<img src="screen2.png" alt="Screen 2" width="300">
-<img src="screen3.png" alt="Screen 3" width="300">
