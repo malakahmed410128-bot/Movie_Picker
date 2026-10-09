@@ -10,6 +10,9 @@ what the site does:
 tools used: HTML, CSS, Vanilla JS.
 
 hope you like it!
+
+
+
 <img src="screen1.png" alt="Screen 1" width="300">
 <img src="screen2.png" alt="Screen 2" width="300">
 <img src="screen3.png" alt="Screen 3" width="300">
