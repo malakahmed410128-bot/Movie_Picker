@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Movie_Finder</title>
-        <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html" class="logo">Movie Finder</a>
+    <div>
+      <a href="index.html" class="link">Home</a>
+      <a href="watchlist.html" class="link">Watchlist</a>
+    </div>
+  </div>
 
-    </head>
-    <body>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Movie Finder</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav_btn">Home</a>
-                <a href="watchlist.html" class="nav-btn">Watchlist</a>
-            </div>
-        </nav>
-        <h1>Don't Know What to watch today?</h1>
-        <div class="hero-card">
-            <p class="hero-subtitle">Find your next favorite movie in seconds. Click the button below to get a recommendation!</p>
-            <button id="recommend-btn" class="main-btn">Pick a Movie</button>
+  <h1>Don't Know What to watch today?</h1>
 
-            <div id="movie-result" class="movie-result"></div>
-            <button id="add-watchlist-btn" class="secondary-btn" style="display: none;">Add to Watchlist</button>
-        </div>
-        <script src="script.js"></script>
+  <div class="box">
+    <p class="txt">Find your next favorite movie in seconds. Click below!</p>
+    <button id="btn1" class="btn">Pick a Movie</button>
 
-    </body>
+    <div id="res" class="res"></div>
+    <button id="btn2" class="btn2" style="display: none;">Add to Watchlist</button>
+  </div>
 
+  <script src="script.js"></script>
+</body>
 </html>

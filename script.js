@@ -1,35 +1,43 @@
-const movies = [
-    "Inception",
-    "Interstellar",
-    "Spirited Away",
-    "The Dark Knight",
-    "Spider-Man: Into the Spider-Verse",
-    "Paddington",
-    "La La Land"
+var arr = [
+  { title: "Inception", img: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=300" },
+  { title: "Interstellar", img: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=300" },
+  { title: "Spirited Away", img: "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=300" },
+  { title: "The Dark Knight", img: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=300" },
+  { title: "Spider-Man", img: "https://images.unsplash.com/photo-1635863138275-d9b33299680b?w=300" }
 ];
 
-const recommendBtn = document.getElementById('recommend-btn');
-const movieResult = document.getElementById('movie-result');
-const addWatchlistBtn = document.getElementById('add-watchlist-btn');
+var b1 = document.getElementById('btn1');
+var res = document.getElementById('res');
+var b2 = document.getElementById('btn2');
 
-let currentMovie = "";
-recommendBtn.addEventListener('click', () => {
-    const randomIndex = Math.floor(Math.random() * movies.length);
-    currentMovie = movies[randomIndex];
-    
-    movieResult.innerHTML = `<h3>Suggested Movie:</h3><p>${currentMovie}</p>`;
-    addWatchlistBtn.style.display = "inline-block"; 
-});
-addWatchlistBtn.addEventListener('click', () => {
-    if (!currentMovie) return;
+var m = "";
 
-    let watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+b1.onclick = function() {
+  res.innerHTML = "Loading...";
 
-    if (!watchlist.includes(currentMovie)) {
-        watchlist.push(currentMovie);
-        localStorage.setItem('watchlist', JSON.stringify(watchlist));
-        alert(`${currentMovie} added to your Watchlist! 🎬`);
-    } else {
-        alert(`${currentMovie} is already in your Watchlist!`);
-    }
-});
+  setTimeout(function() {
+    var r = Math.floor(Math.random() * arr.length);
+    m = arr[r].title;
+    var imgUrl = arr[r].img;
+
+    res.innerHTML = "<h3>" + m + "</h3><img src='" + imgUrl + "' class='img'>";
+    b2.style.display = "inline-block";
+  }, 500);
+}
+
+b2.onclick = function() {
+  var get = localStorage.getItem('watchlist');
+  var list = [];
+
+  if (get != null) {
+    list = JSON.parse(get);
+  }
+
+  if (list.indexOf(m) == -1) {
+    list.push(m);
+    localStorage.setItem('watchlist', JSON.stringify(list));
+    alert("added");
+  } else {
+    alert("already in list");
+  }
+}

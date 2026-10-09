@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>My Watchlist</title>
-        <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Watchlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html" class="logo">Movie Finder</a>
+    <div>
+      <a href="index.html" class="link">Home</a>
+      <a href="watchlist.html" class="link">Watchlist</a>
+    </div>
+  </div>
 
-    </head>
-    <body>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Movie Finder</a>
-            <div class="nav-links">
-                <a href="index.html" class="nav_btn">Home</a>
-                <a href="watchlist.html" class="nav-btn">Watchlist</a>
-            </div>
-        </nav>
-        <div class="hero-card">
-            <h1>My Watchlist</h1>
-            <p class="hero-subtitle">Your saved movies will appear here!</p>
-            <div id="watchlist-container">
-                <p>No movies added yet.</p>
-            </div>
-        </div>
-        <script src="watchlist.js"></script>
+  <h1>My Watchlist</h1>
 
-    </body>
+  <div class="box">
+    <p class="txt">Your saved movies will appear here!</p>
+    <div id="list"></div>
+  </div>
+
+  <script src="watchlist.js"></script>
+</body>
 </html>
